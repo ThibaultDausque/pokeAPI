@@ -14,7 +14,7 @@ export async function pokemonDetails() {
     const urlSelect = window.location.href;
     const id = getID(urlSelect);
 
-    const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+    const url = `https://pokeapi.co/api/v2/pokemon/${id} `;
     const response = await fetch(url);
     const results = await response.json();
 
@@ -24,7 +24,12 @@ export async function pokemonDetails() {
 
 
         <img id="pokelogo" src="https://logo-marque.com/wp-content/uploads/2020/05/Pokemon-Logo.png">
-        
+
+        <div id="search_block">
+            <input type="search" id="search" placeholder="Search for a Pokemon"/>
+            <button value="" id="searchButton"></button>
+        </div>
+
         <div id="detailCard">
 
             <img id="imgDetails" src="${results.sprites.front_default}"/>
@@ -61,9 +66,19 @@ export async function pokemonDetails() {
         console.log(id);
         let result = parseInt(id, 10) + 1;
         window.location.href = `http://localhost:5173/pokedex/${result}`;
-
         return result;
+    })
 
+    //fonction de recherche
+    const search = details.querySelector("#searchButton");
+    const searchInput = details.querySelector("#search") as HTMLInputElement;
+    search?.addEventListener('click', () => {
+
+        let searchValue = searchInput?.value;
+        window.location.href = `http://localhost:5173/pokedex/${searchValue}`;
+
+
+        return searchValue;
     })
 
     return details;

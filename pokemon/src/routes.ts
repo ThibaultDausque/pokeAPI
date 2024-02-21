@@ -16,6 +16,10 @@ export async function getPath(Path: string) {
         return pokemonDetails();
     }
 
+    if(Path.match(/\/pokedex\/\w+/)) {
+        return pokemonDetails();
+    }
+
 
 
     const page = document.createElement('div');
