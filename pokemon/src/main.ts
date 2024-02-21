@@ -25,9 +25,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
 
-const page = document.querySelector<HTMLDivElement>('#app');
+const homePage = document.querySelector<HTMLDivElement>('#app');
 
-page!.innerHTML = '';
-page!.appendChild(await getPath(window.location.pathname));
-
+homePage!.innerHTML = '';
+homePage!.appendChild(await getPath(window.location.pathname));
 

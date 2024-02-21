@@ -1,0 +1,89 @@
+#detailCard{
+
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+
+}
+
+#detailCard > h3{
+
+    position: relative;
+    bottom: 170px;
+    color: black;
+
+
+}
+
+h3{
+
+    font-weight: 700;
+}
+
+#imgDetails{
+
+    position: relative;
+    bottom: 120px;
+    width: 200px;
+
+}
+
+#pokeType{
+    position: relative;
+    bottom: 200px;
+    color: black;
+    display: inline-block;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#typeElement > h4{
+    position: relative;
+    color: black;
+    bottom: 170px;
+}
+
+
+#typeElement{
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+#abilitiesElement > h4{
+    color: black;
+    position: relative;
+    bottom: 170px;
+
+}
+
+#abilitiesElement > p {
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+    gap: 20px;
+    color: black;
+    bottom: 200px;
+}
+
+#arrow_left{
+    color: black;
+}
+
+#logo{
+    width: 200px;
+}
+
+
+#increment > p{
+    position: relative;
+    color: black;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 200px;
+}

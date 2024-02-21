@@ -1,5 +1,5 @@
 import "./style/pokeHome.css"
-import { pokedex } from "./Pokedex";
+
 
 export const pokeHome = async () => {
     

@@ -1,61 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@100;300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.card{
-    display: flex;
+#pokelogo{
+
+    width: 200px;
 }
 
-.card > * {
-    margin: 0 10px;
-    flex: 1;
-}
-
-h2{
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
+h3{
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
-p{
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;   
-}
 
-#sprite{
-    width: 200px;
+#card{
     position: relative;
-    bottom: 100px
+    display: inline-block;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-#info {
-    position: relative;
-    bottom: 150px;
-    text-align: center;
+#pokeimg{
+    width: 100px;
+    transition: width 0.2s ease-in-out;
 }
 
-#search{
-    position: relative;
-    width: 200px;
-    height: 50px;
-    border-radius: 50px;
-    border: solid 2px white;
-    background-color: transparent;
-}
-
-#searchlogo{
-    width: 40px;
-    border: solid 2px white;
-    background-color: white;
-    position: relative;
-    top: 15px;
-    color: white;
-    border-radius: 50px;
-    -webkit-box-shadow: inset -1px 3px 8px 5px #c4c0c0, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
-
-}
-
-#searchlogo:hover{
+#pokeimg:hover{
+    width: 120px;
     cursor: pointer;
 }
-
-
-
